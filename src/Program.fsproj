@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="BucketSort.fs" />
+    <Compile Include="ShellSort.fs" />
+    <Compile Include="CountingSort.fs" />
+    <Compile Include="HeapSort.fs" />
+    <Compile Include="MergeSort.fs" />
+    <Compile Include="QuickSort.fs" />
+    <Compile Include="InsertionSort.fs" />
+    <Compile Include="SelectionSort.fs" />
+    <Compile Include="BubbleSort.fs" />
+    <Compile Include="Shuffle.fs" />
+    <Compile Include="Display.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
