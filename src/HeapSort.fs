@@ -6,15 +6,15 @@ let rec Heapify(nums: int[], n: int, i: int) =
   let mutable left = i * 2 + 1
   let mutable right = i * 2 + 2
 
-  // ¶‚Ìqƒm[ƒh‚ªÅ‘å‚Ìê‡
+  // å·¦ã®å­ãƒãƒ¼ãƒ‰ãŒæœ€å¤§ã®å ´åˆ
   if left < n && nums.[left] > nums.[largest] then
     largest <- left
 
-  // ‰E‚Ìqƒm[ƒh‚ªÅ‘å‚Ìê‡
+  // å³ã®å­ãƒãƒ¼ãƒ‰ãŒæœ€å¤§ã®å ´åˆ
   if right < n && nums.[right] > nums.[largest] then
     largest <- right
 
-  // Å‘å‚Ìqƒm[ƒh‚ªeƒm[ƒh‚æ‚è‘å‚«‚¢ê‡AŒğŠ·‚µ‚ÄÄ‹AŒÄ‚Ño‚µ
+  // æœ€å¤§ã®å­ãƒãƒ¼ãƒ‰ãŒè¦ªãƒãƒ¼ãƒ‰ã‚ˆã‚Šå¤§ãã„å ´åˆã€äº¤æ›ã—ã¦å†å¸°å‘¼ã³å‡ºã—
   if largest <> i then
     let temp = nums.[i]
     nums.[i] <- nums.[largest]
@@ -25,18 +25,18 @@ let rec Heapify(nums: int[], n: int, i: int) =
 let HeapSort(nums: int[]) =
   let mutable n = Array.length nums
 
-  // Å‘åƒq[ƒv‚ğ\’z
+  // æœ€å¤§ãƒ’ãƒ¼ãƒ—ã‚’æ§‹ç¯‰
   for i = n / 2 - 1 downto 0 do
     Heapify(nums, n, i)
 
-  // ƒq[ƒv‚©‚ç—v‘f‚ğ1‚Â‚¸‚Âæ‚èo‚µA¸‡‚Éƒ\[ƒg
+  // ãƒ’ãƒ¼ãƒ—ã‹ã‚‰è¦ç´ ã‚’1ã¤ãšã¤å–ã‚Šå‡ºã—ã€æ˜‡é †ã«ã‚½ãƒ¼ãƒˆ
   for i = n - 1 downto 0 do
-    // Å‘å’l‚ğæ‚èo‚µA”z—ñ‚Ì––”ö‚ÆŒğŠ·
+    // æœ€å¤§å€¤ã‚’å–ã‚Šå‡ºã—ã€é…åˆ—ã®æœ«å°¾ã¨äº¤æ›
     let temp = nums.[0]
     nums.[0] <- nums.[i]
     nums.[i] <- temp
 
-    // ƒq[ƒv‚ğÄ\’z
+    // ãƒ’ãƒ¼ãƒ—ã‚’å†æ§‹ç¯‰
     n <- n - 1
     Heapify(nums, n, 0)
 
