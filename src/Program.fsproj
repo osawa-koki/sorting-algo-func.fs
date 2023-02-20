@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="BubbleSort.fs" />
     <Compile Include="Shuffle.fs" />
     <Compile Include="Display.fs" />
     <Compile Include="Program.fs" />
