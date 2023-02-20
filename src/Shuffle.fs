@@ -9,4 +9,3 @@ let ShuffleArray (arr: int []) =
         arr.[i] <- arr.[j]
         arr.[j] <- temp
     arr
-
