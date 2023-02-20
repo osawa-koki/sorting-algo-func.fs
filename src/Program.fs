@@ -4,11 +4,12 @@ open Shuffle
 open BubbleSort
 open SelectionSort
 open InsertionSort
+open QuickSort
 
 [<EntryPoint>]
 let main argv = 
 
-  let arr = [|1..10|]
+  let arr = [|0..9|]
   Display "Original" arr
 
   Display "Shuffled" (ShuffleArray arr)
@@ -22,5 +23,9 @@ let main argv =
   Display "Shuffled" (ShuffleArray arr)
 
   Display "Insertion Sort" (InsertionSort arr)
+
+  Display "Shuffled" (ShuffleArray arr)
+
+  Display "Quick Sort" (QuickSort arr)
 
   0
