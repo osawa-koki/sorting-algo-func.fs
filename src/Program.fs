@@ -11,7 +11,7 @@ open CountingSort
 open ShellSort
 
 [<EntryPoint>]
-let main argv = 
+let main _ = 
 
   let arr = [|0..9|]
   Display "Original" arr
