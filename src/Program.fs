@@ -1,7 +1,10 @@
 
+open Display
+
 [<EntryPoint>]
 let main argv = 
-  // アプリケーションのロジックを実装する
-  printfn "Hello, world!"
-  // 終了コード0を返す
+
+  let arr = [|1..10|]
+  Display "Original" arr
+
   0
