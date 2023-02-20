@@ -2,6 +2,7 @@
 open Display
 open Shuffle
 open BubbleSort
+open SelectionSort
 
 [<EntryPoint>]
 let main argv = 
@@ -12,5 +13,9 @@ let main argv =
   Display "Shuffled" (ShuffleArray arr)
 
   Display "Bubble Sorted" (BubbleSort arr)
+
+  Display "Shuffled" (ShuffleArray arr)
+
+  Display "Selection Sort" (SelectionSort arr)
 
   0
