@@ -9,6 +9,7 @@ open MergeSort
 open HeapSort
 open CountingSort
 open ShellSort
+open BucketSort
 
 [<EntryPoint>]
 let main _ = 
@@ -47,5 +48,9 @@ let main _ =
   Display "Shuffled" (ShuffleArray arr)
 
   Display "Shell Sort" (ShellSort arr)
+
+  Display "Shuffled" (ShuffleArray arr)
+
+  Display "Bucket Sort" (BucketSort arr)
 
   0
