@@ -5,6 +5,7 @@ open BubbleSort
 open SelectionSort
 open InsertionSort
 open QuickSort
+open MergeSort
 
 [<EntryPoint>]
 let main argv = 
@@ -27,5 +28,9 @@ let main argv =
   Display "Shuffled" (ShuffleArray arr)
 
   Display "Quick Sort" (QuickSort arr)
+
+  Display "Shuffled" (ShuffleArray arr)
+
+  Display "Merge Sort" (MergeSort arr)
 
   0
