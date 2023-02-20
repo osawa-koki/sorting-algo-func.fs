@@ -8,6 +8,7 @@ open QuickSort
 open MergeSort
 open HeapSort
 open CountingSort
+open ShellSort
 
 [<EntryPoint>]
 let main argv = 
@@ -42,5 +43,9 @@ let main argv =
   Display "Shuffled" (ShuffleArray arr)
 
   Display "Counting Sort" (CountingSort arr)
+
+  Display "Shuffled" (ShuffleArray arr)
+
+  Display "Shell Sort" (ShellSort arr)
 
   0
